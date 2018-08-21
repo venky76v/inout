@@ -1,0 +1,11 @@
+<h3>Parent Component</h3>
+<label>Parent Component</label>
+<input class="form-control" type="text" #pcomponent (keyup)="0" />
+
+<div class="alert alert-info" role="alert">
+    <h4 class="alert-heading">Value of child component is:</h4>
+    <p>{{CData}}</p>
+    <hr>
+    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+  </div>
+<app-child [PData]="pcomponent.value" (childEvent)="CData=$event"></app-child>

@@ -1,0 +1,11 @@
+<h3>Child Component</h3>
+
+<label>Child Component</label>
+<input class="form-control" type="text" #ccomponent (keyup)="onChange(ccomponent.value)" />
+
+<div class="alert alert-primary" role="alert">
+  <h4 class="alert-heading">Value of parent component is:</h4>
+  <p>{{PData}}</p>
+  <hr>
+  <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+</div>
